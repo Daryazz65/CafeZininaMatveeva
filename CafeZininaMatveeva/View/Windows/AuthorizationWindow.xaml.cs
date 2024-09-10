@@ -23,5 +23,10 @@ namespace CafeZininaMatveeva.View.Windows
         {
             InitializeComponent();
         }
+
+        private void LoginBtn_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
