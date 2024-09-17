@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CafeZininaMatveeva.Classes;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -26,7 +27,19 @@ namespace CafeZininaMatveeva.View.Windows
 
         private void LoginBtn_Click(object sender, RoutedEventArgs e)
         {
-
+            if (string.IsNullOrEmpty(LoginTb.Text) && string.IsNullOrEmpty(PasswordPb.Password))
+            {
+                MessageBox.Show("Введите логин и пароль.");
+            }
+            else if (string.IsNullOrEmpty(LoginTb.Text) && string.IsNullOrEmpty(PasswordPb.Password))
+            {
+                MessageBox.Show("Введите логин и пароль.");
+            }
+            else if (AuthoriseHelper.Authorise(LoginTb.Text, PasswordPb.Password)) {
+                MainWindow mainWindow = new MainWindow();
+                mainWindow.Show();
+                Close();
+            }
         }
     }
 }
