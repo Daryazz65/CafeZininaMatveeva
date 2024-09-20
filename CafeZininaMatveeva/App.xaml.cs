@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CafeZininaMatveeva.Model;
+using System;
 using System.Collections.Generic;
 using System.Configuration;
 using System.Data;
@@ -13,5 +14,6 @@ namespace CafeZininaMatveeva
     /// </summary>
     public partial class App : Application
     {
+       private static Entities context = new Entities();
     }
 }
