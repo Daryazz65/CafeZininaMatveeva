@@ -9,12 +9,11 @@ namespace CafeZininaMatveeva.Classes
 {
     internal class AuthoriseHelper
     {
-        private static Entities context = App.GetContext();
         public static Employee selectedEmployee;
 
         public static bool Authorise(string login, string password)
         {
-            List<Employee> employees = context.Employee.ToList();
+            List<Employee> employees = App.context.Employee.ToList();
             foreach (Employee employee in employees)
             {
                 if (employee.Login == login && employee.Password == password)

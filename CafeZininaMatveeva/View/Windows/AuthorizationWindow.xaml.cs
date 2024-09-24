@@ -36,10 +36,10 @@ namespace CafeZininaMatveeva.View.Windows
             {
                 MessageBox.Show("Введите логин и пароль.");
             }
-            else if()
-            {
-              //  Employee newEmployee = App.context.Employee.FirstOrDefault(employee => employee.Login == LoginTb.Text && employee.Password == PasswordPb.Password);
-            }
+            //else if()
+            //{
+            //  //  Employee newEmployee = App.context.Employee.FirstOrDefault(employee => employee.Login == LoginTb.Text && employee.Password == PasswordPb.Password);
+            //}
         }
     }
 }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CafeZininaMatveeva.View.Pages.Administrator;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -26,7 +27,9 @@ namespace CafeZininaMatveeva.View.Windows
 
         private void EmpoyeeListBtn_Click(object sender, RoutedEventArgs e)
         {
-
+            // Открываем старницу сотрудников.
+            // Обращаемся к фрэйму по имени, вызываем метод Navigate(), в скобках создаем экземпляр страницы.
+            MainFrm.Navigate(new EmployeePage());
         }
 
         private void OrderListBtn_Click(object sender, RoutedEventArgs e)

@@ -29,5 +29,10 @@ namespace CafeZininaMatveeva.View.Pages.Administrator
         {
 
         }
+
+        private void EmployeesLv_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
     }
 }

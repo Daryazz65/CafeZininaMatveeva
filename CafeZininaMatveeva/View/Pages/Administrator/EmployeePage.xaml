@@ -43,5 +43,18 @@
 
         </Grid>
         <!-- #endregion -->
+        
+        <!-- #region Список сотрудников -->
+        <ListView Name="EmployeesLv" Grid.Row="2"
+                  SelectionChanged="EmployeesLv_SelectionChanged">
+            <ListView.View>
+                <GridView>
+                    
+                </GridView>
+            </ListView.View>
+        </ListView>
+        
+        <!-- #ENDREGION -->
+        
     </Grid>
 </Page>

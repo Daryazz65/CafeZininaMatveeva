@@ -14,6 +14,6 @@ namespace CafeZininaMatveeva
     /// </summary>
     public partial class App : Application
     {
-       private static Entities context = new Entities();
+       public static Entities context = new Entities();
     }
 }
