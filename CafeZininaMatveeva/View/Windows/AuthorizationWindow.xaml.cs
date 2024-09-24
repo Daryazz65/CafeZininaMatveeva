@@ -1,4 +1,5 @@
 ﻿using CafeZininaMatveeva.Classes;
+using CafeZininaMatveeva.Model;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -35,10 +36,9 @@ namespace CafeZininaMatveeva.View.Windows
             {
                 MessageBox.Show("Введите логин и пароль.");
             }
-            else if (AuthoriseHelper.Authorise(LoginTb.Text, PasswordPb.Password)) {
-                MainWindow mainWindow = new MainWindow();
-                mainWindow.Show();
-                Close();
+            else if()
+            {
+              //  Employee newEmployee = App.context.Employee.FirstOrDefault(employee => employee.Login == LoginTb.Text && employee.Password == PasswordPb.Password);
             }
         }
     }

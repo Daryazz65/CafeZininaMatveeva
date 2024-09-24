@@ -13,14 +13,14 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace CafeZininaMatveeva
+namespace CafeZininaMatveeva.View.Pages.Administrator
 {
     /// <summary>
-    /// Логика взаимодействия для MainWindow.xaml
+    /// Логика взаимодействия для OrderPage.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class OrderPage : Page
     {
-        public MainWindow()
+        public OrderPage()
         {
             InitializeComponent();
         }
